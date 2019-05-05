@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Button, Row, Col, Input, Card } from 'react-materialize';
 import Axios from 'axios';
 import PubSub from 'pubsub-js';
-import { css } from 'glamor';
 
 
 export default class CreateToDoList extends Component {
@@ -44,7 +43,7 @@ export default class CreateToDoList extends Component {
                 window.Materialize.toast('Task incluído!', 2000, 'rounded green darken-4 white-text')
             },
             (error) => {
-                if (this.state.task == '' || this.state.data == '' || this.state.usuario == 0){
+                if (this.state.task === '' || this.state.data === '' || this.state.usuario === 0){
                     window.Materialize.toast('Favor inserir todas iformações, fera.', 2000, 'rounded red darken-4 white-text') 
                 }
                 else
