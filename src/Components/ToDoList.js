@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 import { Row, Button, Col, Card } from 'react-materialize';
 import PubSub from 'pubsub-js';
-import moment, { months } from 'moment';
+import moment from 'moment';
 
 export default class ToList extends Component {
 

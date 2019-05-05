@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CreateToDoList from './Components/CreateToDoList';
 import ToDoList from './Components/ToDoList';
-import { Row, Col } from 'react-materialize';
+import Header from './Components/Header';
+import { Row } from 'react-materialize';
 
 class App extends Component {
   render() {
     return (
     <Row>
+        <Header />
         <CreateToDoList />
         <ToDoList />
      </Row>

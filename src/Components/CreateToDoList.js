@@ -44,7 +44,7 @@ export default class CreateToDoList extends Component {
             },
             (error) => {
                 if (this.state.task === '' || this.state.data === '' || this.state.usuario === 0){
-                    window.Materialize.toast('Favor inserir todas iformações, fera.', 2000, 'rounded red darken-4 white-text') 
+                    window.Materialize.toast('Favor inserir todas informações, fera.', 2000, 'rounded red darken-4 white-text') 
                 }
                 else
                 window.Materialize.toast('Erro ao incluir task.', 2000, 'rounded red darken-4 white-text') 
